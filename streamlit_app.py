@@ -13,7 +13,7 @@ with st.form('my_form'):
   text = st.text_area('Enter text:', 'Give me a use case and ask for test cases')
   submitted = st.form_submit_button('Submit')
   if not openai_api_key.startswith('sk-'):
-    st.warning('Please enter your OpenAI API key!', icon='⚠')
+    st.warning('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', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'):
     generate_response(text)
 
